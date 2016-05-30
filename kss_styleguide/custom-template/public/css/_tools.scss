@@ -1,0 +1,7 @@
+@function em($target, $context: 16px) {
+  @return ($target / $context) * 1em;
+}
+
+@function rem($target, $context: 16px) {
+  @return ($target / $context) * 1rem;
+}
