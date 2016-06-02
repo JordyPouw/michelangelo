@@ -5,8 +5,9 @@
 
 @import '_settings.scss';
 @import '_tools.scss';
-@import '_box-sizing.scss';
-@import '_base.scss';
+
+@import '_kss-body.scss';
+@import '_kss-title.scss';
 @import '_kss-header.scss';
 @import '_kss-navigation.scss';
 @import '_kss-introduction.scss';

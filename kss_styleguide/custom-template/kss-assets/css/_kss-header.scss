@@ -1,99 +1,89 @@
-$bar-height:      4px;
-$bar-width:       30px;
+$bar-height: 4px;
+$bar-width: 30px;
+
 
 .kss-header {
+  z-index: 900;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 900;
+  display: block;
+  box-sizing: border-box;
   width: 100%;
   min-height: 50px;
   padding: 10px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
   color: $cowabunga;
   background: $white;
-  
-  @media (min-width: 1025px) { display: none; }
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
 
-  .kss-header-inner { position: relative; }
-  
-  .kss-doc-title {
-    margin: 0;
-    font-size: rem(20px);
-    text-align: center;
-  }
+  @include mq(min, 1025px) { display: none; }
+}
 
-  .kss-hamburger-icon-trigger {
+.kss-header__inner { position: relative; }
+
+.kss-header__title {
+  font-size: rem(16px);
+  font-weight: 700;
+  line-height: 25px;
+  text-align: left;
+
+  @include mq(min, 568px) { font-size: rem(20px); }
+}
+
+.kss-header__hamburger-trigger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.kss-header__hamburger {
+  width: $bar-width;
+  height: $bar-height;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  border-radius: 5px;
+  color: $cowabunga;
+  background: $cowabunga;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform:translate3d(0,0,0);
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  transition: all 0.4s;
+
+  &:before, 
+  &:after {
+    content: '';
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-  }
-
-  .kss-hamburger-icon {
     width: $bar-width;
     height: $bar-height;
-    margin-top: 13px;
-    margin-bottom: 13px;
-    border-radius: 10px;
-    color: $cowabunga;
     background: $cowabunga;
-    -webkit-perspective: 1000;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform:translate3d(0,0,0);
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    transition: all 0.2s ease-out;
-    
-    &:before, 
-    &:after {
-      content: '';
-      position: absolute;
-      width: $bar-width;
-      height: $bar-height;
-      background: $cowabunga;
-      transition: all 0.5s ease-out;
-    }        
-    
-    &:before {
-      top: -$bar-height*2;
-      border-radius: 10px;
-    }
+    transition: all 0.5s;
+  }        
 
-    &:after {
-      top: $bar-height*2;
-      border-radius: 10px;
-    }
-
-    &.kss-state-hover { background: transparent; }
-    
-    &.kss-state-hover:before, 
-    &.kss-state-hover:after {
-      width: $bar-width/2;
-      transition: all 0.5s ease-in-out;
-    }
-    
-    &.kss-state-hover::before { transform: translate(3px ,11px) rotate(-505deg); }
-
-    &.kss-state-hover::after { transform: translate(3px, -12px) rotate(505deg); }
+  &:before {
+    top: -$bar-height*2;
+    border-radius: 5px;
   }
-}
 
-// side header
-.kss-side-header {
-  display: none;
-  padding: 20px 10px;
+  &:after {
+    top: $bar-height*2;
+    border-radius: 5px;
+  }
 
-  @media (min-width: 1025px) { display: block; }
-}
+  &.kss-state-active { background: transparent; }
 
-// title
-.kss-header .kss-doc-title,
-.kss-side-doc-title {
-  text-align: center;
-  color: $cowabunga;
+  &.kss-state-active:before, 
+  &.kss-state-active:after {
+    width: $bar-width/2;
+    transition: all 0.5s;
+  }
 
-  @media (max-width: 568px) { font-size: rem(16px); }
+  &.kss-state-active:before { transform: translate(7px ,4px) rotate(-40deg); }
+
+  &.kss-state-active:after { transform: translate(7px, -4px) rotate(40deg); }
 }
