@@ -53,45 +53,52 @@
 }).call(this);
 
 
-// Custom code.
+
+// custom code.
 (function() {
 
-  // navigation
-  $('.kss-hamburger-icon-trigger').on('click', function(){
-    var kssNav  = '.kss-navigation',
-        kssDoc  = '.kss-documentation',
-        kssIcon = '.kss-hamburger-icon';
 
-    if($(kssNav).hasClass('kss-state-active')){
-      $(kssNav).removeClass('kss-state-active');
-      $(kssDoc).removeClass('kss-state-active');
-    } else {
-      $(kssNav).addClass('kss-state-active');
-      $(kssDoc).addClass('kss-state-active');
+  // navigation.
+  $('.kss-header__hamburger-trigger').on('click', function (e) {
+    var kssNavigation  = '.kss-navigation',
+        kssDocumentation  = '.kss-documentation',
+        kssHamburger = '.kss-header__hamburger';
+
+    if ($(kssNavigation).hasClass('kss-state-active')) {
+      $(kssNavigation).removeClass('kss-state-active');
+      $(kssDocumentation).removeClass('kss-state-active');
+    }
+    else {
+      $(kssNavigation).addClass('kss-state-active');
+      $(kssDocumentation).addClass('kss-state-active');
     }
 
-    if($(kssIcon).hasClass('kss-state-hover')){
-      $(kssIcon).removeClass('kss-state-hover');
-    } else {
-      $(kssIcon).addClass('kss-state-hover');
+    if ($(kssHamburger).hasClass('kss-state-active')) {
+      $(kssHamburger).removeClass('kss-state-active');
+    }
+    else {
+      $(kssHamburger).addClass('kss-state-active');
     }
   });
 
-  // smooth scrolling
-  smoothScrolling();
-  function smoothScrolling(){
-    $('a[href*=#]:not([href=#])').click(function() {
+
+  // smooth scrolling.
+  (function smoothScrolling () {
+    $('.kss-nav__item > a[href*=section]').on('click', function (e) {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
         if (target.length) {
-          $('html,body').animate({
+          $('html, body').animate({
             scrollTop: target.offset().top
           }, 1000);
+
           return false;
         }
       }
     });
-  }
+  })();
+
 
 })();
