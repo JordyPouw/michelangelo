@@ -34,13 +34,12 @@ $cowabunga:   $cowabunga;
   &.kss-state-active { transform: none; }
 }
 
-// side header
 .kss-navigation__title {
   display: none;
   box-sizing: border-box;
   padding: 20px 10px;
 
-  @media (min-width: 1025px) { display: block; }
+  @include mq(min, 1024px) { display: block; }
 }
 
 .kss-nav {
@@ -51,10 +50,11 @@ $cowabunga:   $cowabunga;
   height: 100%;
   margin: 0;
   padding-top: 10px;
+  padding-bottom: 100px;
   padding-left: 0;
   list-style-type: none;
 
-  @media (min-width: 1025px) { padding-top: 0; }
+  @include mq(min, 1024px) { padding-top: 0; }
 }
 
 .kss-nav__item a {
