@@ -8,7 +8,7 @@
 
 "//": "relative to this file.",
   "homepage"     : "kss-styleguide.md",
-  "template"     : "kss_styleguide/custom-template/",
+  "builder"      : "kss_styleguide/custom-template/",
   "source"       : "src/",
   "destination"  : "kss_styleguide/styleguide/",
 
