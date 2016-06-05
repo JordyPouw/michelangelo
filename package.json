@@ -1,6 +1,6 @@
 {
   "name": "michelangelo",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "kss-node living styleguide theme.",
   "devDependencies": {
     "gulp": "~3.9.1",
