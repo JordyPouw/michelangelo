@@ -385,19 +385,26 @@
 
 .kss-colors-container {
   margin: 0;
-  margin-left: -10px;
   padding-left: 0; }
+  @media only screen and (min-width: 35.5625em) {
+    .kss-colors-container {
+      margin-left: -10px; } }
 
 .kss-color {
   position: relative;
-  display: inline-block;
+  display: block;
   box-sizing: border-box;
-  margin-left: 10px;
+  width: 100%;
+  height: 127px;
+  margin: 0 auto;
   margin-top: 10px;
   border: 1px solid #CCCCCC;
-  width: 225px;
-  height: 127px;
   border-radius: 2px; }
+  @media only screen and (min-width: 35.5625em) {
+    .kss-color {
+      display: inline-block;
+      width: 225px;
+      margin-left: 10px; } }
 
 .kss-color .kss-parameters__description {
   position: absolute;
