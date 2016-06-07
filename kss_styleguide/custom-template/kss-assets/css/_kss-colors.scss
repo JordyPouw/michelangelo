@@ -1,0 +1,46 @@
+.kss-colors-container {
+  margin: 0;
+  margin-left: -10px;
+  padding-left: 0; 
+}
+
+.kss-color {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-top: 10px;
+  border: 1px solid $gray;
+  width: 225px;
+  height: 127px;
+  border-radius: 2px;
+}
+
+.kss-color .kss-parameters__description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  background: $white;
+}
+
+.kss-color__name {
+  display: block;
+  min-height: 22px;
+  font-weight: 700;
+  font-size: em(14px);
+  line-height: 1.6;
+}
+
+.kss-color__var,
+.kss-color__code {
+  display: block;
+  font-size: em(12px);
+  line-height: 1.4;
+}
+
+.kss-color .kss-parameters__name { display: none; }
+

@@ -101,4 +101,29 @@
   })();
 
 
+  // colors.
+  (function(){
+    var parameters = $('.kss-parameters');
+
+    if (parameters) {
+      $('.kss-parameters__item').each(function (index) {
+        var description = $(this).find('.kss-parameters__description').text().trim().replace(/, /g, ',');
+        var colorName = description.split(',')[1] ? description.split(',')[1] : '';
+        var colorVar = $(this).find('.kss-parameters__name').text().trim();
+        var color = description.split(',')[0];
+        var isColor  = /(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(color);
+        var colorContent = '<span class="kss-color__name">' + colorName + '</span>' +
+                           '<span class="kss-color__var">' + colorVar + '</span>' +
+                           '<span class="kss-color__code">' + color + '</span>';
+        
+        if (isColor) {
+          $(this).parent().addClass('kss-colors-container');
+          $(this).addClass('kss-color').css('background', color);
+          $(this).find('.kss-parameters__description').html(colorContent);
+        }
+      });
+    }
+  })();
+
+
 })();
