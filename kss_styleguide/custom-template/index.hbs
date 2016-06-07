@@ -92,6 +92,14 @@
                 </h{{depth}}>
               </a>
 
+              {{#if description}}
+                <div class="kss-section__description">{{{description}}}</div>
+              {{/if}}
+
+              {{#if sourceFile.name}}
+                <p class="kss-section__source">Source: <span>{{sourceFile.name}}</span>, line <span>{{sourceFile.line}}</span></p>
+              {{/if}}
+
               {{#if parameters}}
                 <ul class="kss-parameters">
                 {{#each parameters}}
@@ -107,14 +115,6 @@
                   </li>
                 {{/each}}
                 </ul>
-              {{/if}}
-
-              {{#if description}}
-                <div class="kss-section__description">{{{description}}}</div>
-              {{/if}}
-
-              {{#if sourceFile.name}}
-                <p class="kss-section__source">Source: <span>{{sourceFile.name}}</span>, line <span>{{sourceFile.line}}</span></p>
               {{/if}}
             </article>
 
