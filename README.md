@@ -24,18 +24,20 @@ If you are new to KSS-node, install it globally with `npm install -g kss`. Then 
 npm install michelangelo --save-dev
 ```
 
-Create a config file `kss-config.json` and specify the following config. Read [the KSS-node docs](https://github.com/kss-node/kss-node#using-the-command-line-tool) for more information about the config.
+Create a kss-config file `touch kss-config.json` and specify the following config. Read [the KSS-node docs](https://github.com/kss-node/kss-node#using-the-command-line-tool) for more information about the config.
 ```
 {
-  "title"       : "Michelangelo Styleguide",
-  "mask"        : "*.scss",
-  "placeholder" : "[modifier]",
+  "title"        : "Michelangelo Styleguide",
+  "mask"         : "*.scss",
+  "placeholder"  : "[modifier]",
 
 "//": "relative to this file.",
-  "homepage"     : "kss-styleguide.md",
-  "builder"      : "kss_styleguide/custom-template/",
+  "builder"      : "node_modules/michelangelo/kss_styleguide/custom-template/",
   "source"       : "src/",
-  "destination"  : "kss_styleguide/styleguide/",
+  "destination"  : "kss_styleguide/",
+
+"//": "relative to source.",
+  "homepage"     : "kss-styleguide.md",
 
 "//": "relative to the generated style guide.",
   "css": [],
@@ -43,7 +45,7 @@ Create a config file `kss-config.json` and specify the following config. Read [t
 }
 ```
 
-After setting up the config file, run `kss --config kss-config.json` to generate your living styleguide. Locate your styleguide at the specified path in your config file and open it in the browser.
+After setting up the config file, run `kss --config kss-config.json` to generate your living styleguide. Locate your styleguide at the specified path in your config file and open it in the browser. Cowabunga!
 
 
 
@@ -52,7 +54,7 @@ After setting up the config file, run `kss --config kss-config.json` to generate
 ### KSS-node and documentation syntax
 KSS-node is an implementation of Knyle Style Sheets. A documentation syntax for css that can be used to create a living style guide. KSS-node has a few additional features such as adding a copy of the markup inline or external.
 
-To get familiar with the documentation syntax it is highly advised to read trough [the annotated copy of the official KSS spec on the kss-node repository](https://github.com/kss-node/kss/blob/spec/SPEC.md).
+To get familiar with the documentation syntax it is highly advised to read through [the annotated copy of the official KSS spec on the kss-node repository](https://github.com/kss-node/kss/blob/spec/SPEC.md).
 
 
 ### Michelangelo specifications
@@ -84,6 +86,9 @@ The specific styling for the styleguide is written mobile first. Which makes it 
 
 #### Smooth scrolling
 When clicking on a sub navigation item the page animate scrolls to that specific item, so smooooth.
+
+#### Prefixed styles
+All styles written for the styleguide are prefixed with `.kss-`. They do not interfere with your project styles.
 
 #### ITCSS architecture
 The example src directory is a boilerplate for [ITCSS methodology](https://youtu.be/1OKZOV-iLj4). A methodology created by Harry Roberts.
