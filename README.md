@@ -4,12 +4,12 @@
 
 
 ## Table of contents
-- About
-- Get started
-- Usage
-    + KSS-node and documentation syntax
-    + Michelangelo specifications
-- Demo
+- [About](#about)
+- [Get started](#get-started)
+- [Usage](#usage)
+    + [KSS-node and documentation syntax](#kss-node-and-documentation-syntax)
+    + [Michelangelo specifications](#michelangelo-specifications)
+- [Demo](#demo)
 
 
 
