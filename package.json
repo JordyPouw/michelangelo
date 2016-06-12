@@ -12,9 +12,12 @@
   "license": "MIT",
   "homepage": "https://github.com/stamkracht/michelangelo",
   "keywords": [
+    "kss",
     "kss-node",
     "styleguide",
+    "css",
     "scss",
+    "template",
     "theme"
   ]
 }
