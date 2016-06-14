@@ -5,16 +5,22 @@
 
 ## Table of contents
 - [About](#about)
+- [Demo](#demo)
 - [Get started](#get-started)
 - [Usage](#usage)
     + [KSS-node and documentation syntax](#kss-node-and-documentation-syntax)
     + [Michelangelo specifications](#michelangelo-specifications)
-- [Demo](#demo)
+- [Customize](#customize)
 
 
 
 ## About
 This is a custom template for the kss-node living style guide.
+
+
+
+## Demo
+Have a look at [the demo styleguide](http://stamkracht.github.io/michelangelo/) generated with dummy content to get an impression of the Michelangelo theme with the ITCSS architecture.
 
 
 
@@ -95,5 +101,7 @@ The example src directory is a boilerplate for [ITCSS methodology](https://youtu
 
 
 
-## Demo
-Have a look at [the demo styleguide](http://stamkracht.github.io/michelangelo/) generated with dummy content to get an impression of the Michelangelo theme with the ITCSS architecture.
+## Customize
+Inside the node package directory, go to `kss_styleguide/custom-template/kss-assets/css/` to change the styling of this theme. Run `sass --watch --sourcemap=none kss.scss:kss.css` to watch for changes and compile the scss files.
+
+You can quickly change the primary color by changing the value of the variable `$cowabunga` in `_settings.scss`.
