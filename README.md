@@ -20,7 +20,7 @@ This is a custom template for the kss-node living style guide.
 
 
 ## Demo
-Have a look at [the demo styleguide](http://stamkracht.github.io/michelangelo/) generated with dummy content to get an impression of the Michelangelo theme with the ITCSS architecture.
+Have a look at [the demo styleguide](http://stamkracht.github.io/michelangelo/section-settings.html) generated with dummy content to get an impression of the Michelangelo theme with the ITCSS architecture.
 
 
 
