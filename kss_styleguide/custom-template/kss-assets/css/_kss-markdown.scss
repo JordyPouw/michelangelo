@@ -1,3 +1,6 @@
+$kss-markdown-headings-color: $cowabunga;
+
+
 .kss-markdown {
   overflow-y: auto;
   overflow-x: hidden;
@@ -34,7 +37,7 @@
   }
 
   h1,
-  h2 { color: $cowabunga; }
+  h2 { color: $kss-markdown-headings-color; }
 
   h2 { margin-top: rem(48px); }
 
@@ -43,7 +46,7 @@
   h5, 
   h6 {
     margin-top: rem(24px);
-    color: $cowabunga;
+    color: $kss-markdown-headings-color;
   }
 
   h1 { font-size: em(32px); }

@@ -1,3 +1,8 @@
+$kss-section-item-color: $cowabunga;
+$kss-modifiers-heading-color: $cowabunga;
+$kss-modifiers-name-color: $cowabunga;
+
+
 .kss-documentation {
   z-index: 100;
   position: relative;
@@ -35,7 +40,7 @@
 .kss-section__item {
   margin: 0;
   margin-bottom: 5px;
-  color: $cowabunga;
+  color: $kss-section-item-color;
   font-size: rem(32px);
 
   &--depth-2 {font-size:rem(30px);}
@@ -111,7 +116,7 @@
   margin-bottom: 10px;
   font-size: rem(18px);
   font-weight: 700;
-  color: $cowabunga;
+  color: $kss-modifiers-heading-color;
 }
 
 .kss-modifiers__name {
@@ -119,7 +124,7 @@
   margin-bottom: 5px;
   font-size: rem(16px);
   font-weight: 400;
-  color: $cowabunga;
+  color: $kss-modifiers-name-color;
 }
 
 .kss-modifiers__description { margin: 0; }
