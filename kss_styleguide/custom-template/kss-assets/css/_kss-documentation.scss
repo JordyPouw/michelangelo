@@ -99,7 +99,7 @@ $kss-modifiers-name-color: $cowabunga;
   ul,
   p {
     margin: 0;
-    font-size: em(16px);
+    font-size: rem(16px);
   }
 
   a {
@@ -150,6 +150,12 @@ $kss-modifiers-name-color: $cowabunga;
 .kss-modifiers__example {
   position: relative;
   margin-bottom: 20px;
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
 
   &:last-child { margin-bottom: 0; }
 }

@@ -5,7 +5,10 @@
 .kss-title {
   margin: 0;
   color: #E87E04;
-  text-align: center; }
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700; }
 
 .kss-header {
   z-index: 900;
@@ -30,7 +33,6 @@
 
 .kss-header__title {
   font-size: 1rem;
-  font-weight: 700;
   line-height: 25px;
   text-align: left; }
   @media only screen and (min-width: 35.5625em) {
@@ -181,12 +183,7 @@
 
 .kss-markdown {
   overflow-y: auto;
-  overflow-x: hidden;
-  color: #222222;
-  background: #FFFFFF;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  line-height: 1.5; }
+  overflow-x: hidden; }
   .kss-markdown ul,
   .kss-markdown ol,
   .kss-markdown dl,
@@ -199,9 +196,14 @@
   .kss-markdown figure,
   .kss-markdown pre,
   .kss-markdown address,
+  .kss-markdown a,
   .kss-markdown p,
   .kss-markdown h1, .kss-markdown h2, .kss-markdown h3, .kss-markdown h4, .kss-markdown h5, .kss-markdown h6 {
-    margin: 0; }
+    margin: 0;
+    color: #222222;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.5; }
   .kss-markdown a {
     color: #3498DB;
     text-decoration: none; }
@@ -211,7 +213,8 @@
     outline: 0; }
   .kss-markdown h1,
   .kss-markdown h2 {
-    color: #E87E04; }
+    color: #E87E04;
+    font-weight: 700; }
   .kss-markdown h2 {
     margin-top: 3rem; }
   .kss-markdown h3,
@@ -219,7 +222,8 @@
   .kss-markdown h5,
   .kss-markdown h6 {
     margin-top: 1.5rem;
-    color: #E87E04; }
+    color: #E87E04;
+    font-weight: 700; }
   .kss-markdown h1 {
     font-size: 2em; }
   .kss-markdown h2 {
@@ -262,6 +266,9 @@
     overflow: auto;
     border: 1px solid #CCCCCC;
     padding: 1em;
+    background: #F5F5F5; }
+  .kss-markdown code {
+    padding: 2px 5px;
     background: #F5F5F5; }
 
 .kss-documentation {
@@ -351,7 +358,7 @@
   .kss-section__description ul,
   .kss-section__description p {
     margin: 0;
-    font-size: 1em; }
+    font-size: 1rem; }
   .kss-section__description a {
     color: #3498DB;
     text-decoration: none; }
@@ -393,6 +400,10 @@
 .kss-modifiers__example {
   position: relative;
   margin-bottom: 20px; }
+  .kss-modifiers__example:after {
+    content: '';
+    display: table;
+    clear: both; }
   .kss-modifiers__example:last-child {
     margin-bottom: 0; }
 

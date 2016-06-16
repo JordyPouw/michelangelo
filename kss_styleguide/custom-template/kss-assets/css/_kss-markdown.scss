@@ -4,11 +4,6 @@ $kss-markdown-headings-color: $cowabunga;
 .kss-markdown {
   overflow-y: auto;
   overflow-x: hidden;
-  color: $black;
-  background: $white;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
 
   ul,
   ol,
@@ -22,9 +17,16 @@ $kss-markdown-headings-color: $cowabunga;
   figure,
   pre,
   address,
+  a,
   p,
-  h1, h2, h3, h4, h5, h6 { margin: 0; }
-  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    color: $black;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
   a {
     color: $blue;
     text-decoration: none;
@@ -37,7 +39,10 @@ $kss-markdown-headings-color: $cowabunga;
   }
 
   h1,
-  h2 { color: $kss-markdown-headings-color; }
+  h2 {
+    color: $kss-markdown-headings-color;
+    font-weight: 700;
+  }
 
   h2 { margin-top: rem(48px); }
 
@@ -47,6 +52,7 @@ $kss-markdown-headings-color: $cowabunga;
   h6 {
     margin-top: rem(24px);
     color: $kss-markdown-headings-color;
+    font-weight: 700;
   }
 
   h1 { font-size: em(32px); }
@@ -92,6 +98,11 @@ $kss-markdown-headings-color: $cowabunga;
     overflow: auto;
     border: 1px solid $gray;
     padding: 1em;
+    background: #F5F5F5;
+  }
+
+  code {
+    padding: 2px 5px;
     background: #F5F5F5;
   }
 }
