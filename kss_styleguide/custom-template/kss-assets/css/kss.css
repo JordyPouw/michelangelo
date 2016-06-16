@@ -415,7 +415,7 @@
   .kss-modifiers__example:last-child {
     margin-bottom: 0; }
 
-.kss-section__markup pre {
+.kss-section__markup pre[class*=language-] {
   margin: 0; }
 
 .kss-colors-container {
