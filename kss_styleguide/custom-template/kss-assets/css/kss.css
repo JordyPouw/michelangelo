@@ -273,6 +273,7 @@
   min-height: 100vh;
   padding: 20px;
   padding-top: 80px;
+  background: #FFFFFF;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   transition: opacity 0.4s ease-out; }
@@ -319,7 +320,13 @@
   vertical-align: middle; }
 
 .kss-parameters {
+  padding-left: 40px;
+  list-style-position: outside;
   list-style-type: circle; }
+
+.kss-parameters__item {
+  display: block;
+  margin-bottom: 15px; }
 
 .kss-parameters__name {
   background: #f5f5f5;
@@ -332,6 +339,12 @@
 
 .kss-section__description {
   line-height: 1.5; }
+  .kss-section__description ol,
+  .kss-section__description ul {
+    padding-left: 40px;
+    list-style-position: outside; }
+  .kss-section__description ol {
+    list-style-type: decimal; }
   .kss-section__description ul {
     list-style-type: circle; }
   .kss-section__description ol,
