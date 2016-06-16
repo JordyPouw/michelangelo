@@ -83,6 +83,16 @@ $kss-modifiers-name-color: $cowabunga;
   line-height: 1.5;
 
   ol,
+  ul,
+  p,
+  a {
+    color: $black;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  ol,
   ul {
     padding-left: 40px;
     list-style-position: outside;
@@ -146,6 +156,7 @@ $kss-modifiers-name-color: $cowabunga;
 
 .kss-modifiers__example {
   position: relative;
+  min-height: 50px;
   margin-bottom: 20px;
 
   &:after {
@@ -156,3 +167,5 @@ $kss-modifiers-name-color: $cowabunga;
 
   &:last-child { margin-bottom: 0; }
 }
+
+.kss-section__markup pre { margin: 0; }

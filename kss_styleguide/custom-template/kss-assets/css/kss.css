@@ -346,6 +346,14 @@
 .kss-section__description {
   line-height: 1.5; }
   .kss-section__description ol,
+  .kss-section__description ul,
+  .kss-section__description p,
+  .kss-section__description a {
+    color: #222222;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.5; }
+  .kss-section__description ol,
   .kss-section__description ul {
     padding-left: 40px;
     list-style-position: outside; }
@@ -398,6 +406,7 @@
 
 .kss-modifiers__example {
   position: relative;
+  min-height: 50px;
   margin-bottom: 20px; }
   .kss-modifiers__example:after {
     content: '';
@@ -405,6 +414,9 @@
     clear: both; }
   .kss-modifiers__example:last-child {
     margin-bottom: 0; }
+
+.kss-section__markup pre {
+  margin: 0; }
 
 .kss-colors-container {
   margin: 0;
