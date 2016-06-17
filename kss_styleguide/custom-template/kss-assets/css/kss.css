@@ -374,6 +374,10 @@
     color: #75b9e7;
     text-decoration: underline;
     outline: 0; }
+  .kss-section__description code {
+    display: inline-block;
+    padding: 2px 5px;
+    background: #F5F5F5; }
 
 .kss-section__source {
   margin: 0;
