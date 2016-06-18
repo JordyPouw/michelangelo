@@ -1,3 +1,6 @@
+$kss-header-color: $cowabunga;
+$kss-header-hamburger-color: $cowabunga;
+
 $bar-height: 4px;
 $bar-width: 30px;
 
@@ -12,7 +15,7 @@ $bar-width: 30px;
   width: 100%;
   min-height: 50px;
   padding: 10px;
-  color: $cowabunga;
+  color: $kss-header-color;
   background: $white;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -24,7 +27,6 @@ $bar-width: 30px;
 
 .kss-header__title {
   font-size: rem(16px);
-  font-weight: 700;
   line-height: 25px;
   text-align: left;
 
@@ -47,8 +49,8 @@ $bar-width: 30px;
   margin-top: 13px;
   margin-bottom: 13px;
   border-radius: 5px;
-  color: $cowabunga;
-  background: $cowabunga;
+  color: $kss-header-hamburger-color;
+  background: $kss-header-hamburger-color;
   -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
   -webkit-transform:translate3d(0,0,0);
@@ -61,7 +63,7 @@ $bar-width: 30px;
     position: absolute;
     width: $bar-width;
     height: $bar-height;
-    background: $cowabunga;
+    background: $kss-header-hamburger-color;
     transition: all 0.5s;
   }        
 

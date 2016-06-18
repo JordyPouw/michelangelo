@@ -1,3 +1,8 @@
+$kss-section-item-color: $cowabunga;
+$kss-modifiers-heading-color: $cowabunga;
+$kss-modifiers-name-color: $cowabunga;
+
+
 .kss-documentation {
   z-index: 100;
   position: relative;
@@ -7,6 +12,7 @@
   min-height: 100vh;
   padding: 20px;
   padding-top: 80px;
+  background: $white;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   transition: opacity 0.4s ease-out;
@@ -35,8 +41,10 @@
 .kss-section__item {
   margin: 0;
   margin-bottom: 5px;
-  color: $cowabunga;
+  color: $kss-section-item-color;
   font-size: rem(32px);
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
 
   &--depth-2 {font-size:rem(30px);}
 
@@ -54,7 +62,13 @@
   vertical-align: middle;
 }
 
-.kss-parameters { list-style-type: circle; }
+.kss-parameters {
+  padding-left: 40px;
+  list-style-position: outside;
+  list-style-type: circle;
+}
+
+.kss-parameters__item { margin-bottom: 15px; }
 
 .kss-parameters__name {
   background: #f5f5f5;
@@ -70,13 +84,31 @@
 .kss-section__description {
   line-height: 1.5;
 
+  ol,
+  ul,
+  p,
+  a {
+    color: $black;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  ol,
+  ul {
+    padding-left: 40px;
+    list-style-position: outside;
+  }
+
+  ol { list-style-type: decimal; }
+
   ul { list-style-type: circle; }
 
   ol,
   ul,
   p {
     margin: 0;
-    font-size: em(16px);
+    font-size: rem(16px);
   }
 
   a {
@@ -89,6 +121,12 @@
     color: lighten($blue, 15%);
     text-decoration: underline;
     outline: 0;
+  }
+
+  code {
+    display: inline-block;
+    padding: 2px 5px;
+    background: #F5F5F5;
   }
 }
 
@@ -111,7 +149,7 @@
   margin-bottom: 10px;
   font-size: rem(18px);
   font-weight: 700;
-  color: $cowabunga;
+  color: $kss-modifiers-heading-color;
 }
 
 .kss-modifiers__name {
@@ -119,14 +157,23 @@
   margin-bottom: 5px;
   font-size: rem(16px);
   font-weight: 400;
-  color: $cowabunga;
+  color: $kss-modifiers-name-color;
 }
 
 .kss-modifiers__description { margin: 0; }
 
 .kss-modifiers__example {
   position: relative;
+  min-height: 50px;
   margin-bottom: 20px;
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
 
   &:last-child { margin-bottom: 0; }
 }
+
+.kss-section__markup pre[class*=language-] { margin: 0; }

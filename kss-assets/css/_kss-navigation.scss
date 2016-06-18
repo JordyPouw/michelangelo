@@ -1,6 +1,4 @@
-$black:       $black;
-$white:       $white;
-$cowabunga:   $cowabunga;
+$kss-nav-item-link-active: $cowabunga;
 
 
 .kss-navigation {
@@ -67,11 +65,11 @@ $cowabunga:   $cowabunga;
   text-decoration: none;
   transition: color 0.3s;
 
-  &:hover { color: $cowabunga; }
+  &:hover { color: $kss-nav-item-link-active; }
 
   &:hover .kss-nav__name { transform: translateX(6px); }
 
-  &.kss-state-active { color: $cowabunga; }
+  &.kss-state-active { color: $kss-nav-item-link-active; }
 
   &.kss-state-active:hover .kss-nav__name { transform: none; }
 }
