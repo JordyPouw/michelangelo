@@ -1,6 +1,7 @@
 .kss-body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background: #FFFFFF; }
 
 .kss-title {
   margin: 0;
@@ -311,7 +312,9 @@
   margin: 0;
   margin-bottom: 5px;
   color: #E87E04;
-  font-size: 2rem; }
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400; }
   .kss-section__item--depth-2 {
     font-size: 1.875rem; }
   .kss-section__item--depth-3 {
