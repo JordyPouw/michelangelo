@@ -1,20 +1,23 @@
 {
   "name": "michelangelo",
-  "version": "0.3.2",
-  "description": "kss-node living styleguide theme.",
+  "version": "0.4.3",
+  "description": "This is a custom template for the kss-node living style guide.",
   "devDependencies": {
     "gulp": "~3.9.1",
     "gulp-load-plugins": "~1.2.2",
     "gulp-shell": "~0.5.2",
-    "kss": "~2.4.0"
+    "kss": "^3.0.0-beta.12"
   },
   "repository": "https://github.com/stamkracht/michelangelo.git",
   "license": "MIT",
   "homepage": "https://github.com/stamkracht/michelangelo",
   "keywords": [
+    "kss",
     "kss-node",
     "styleguide",
+    "css",
     "scss",
+    "template",
     "theme"
   ]
 }

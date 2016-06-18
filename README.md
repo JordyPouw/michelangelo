@@ -5,16 +5,22 @@
 
 ## Table of contents
 - [About](#about)
+- [Demo](#demo)
 - [Get started](#get-started)
 - [Usage](#usage)
     + [KSS-node and documentation syntax](#kss-node-and-documentation-syntax)
     + [Michelangelo specifications](#michelangelo-specifications)
-- [Demo](#demo)
+- [Customize](#customize)
 
 
 
 ## About
-A custom template for the kss-node living style guide.
+This is a custom template for the kss-node living style guide.
+
+
+
+## Demo
+Have a look at [the demo styleguide](http://stamkracht.github.io/michelangelo/section-settings.html) generated with dummy content to get an impression of the Michelangelo theme with the ITCSS architecture.
 
 
 
@@ -52,7 +58,7 @@ After setting up the config file, run `kss --config kss-config.json` to generate
 ## Usage
 
 ### KSS-node and documentation syntax
-KSS-node is an implementation of Knyle Style Sheets. A documentation syntax for css that can be used to create a living style guide. KSS-node has a few additional features such as adding a copy of the markup inline or external.
+KSS-node is an implementation of Knyle Style Sheets. This is a documentation syntax for css that can be used to create a living style guide. KSS-node has a few additional features such as adding a copy of the markup inline or external.
 
 To get familiar with the documentation syntax it is highly advised to read through [the annotated copy of the official KSS spec on the kss-node repository](https://github.com/kss-node/kss/blob/spec/SPEC.md).
 
@@ -60,13 +66,13 @@ To get familiar with the documentation syntax it is highly advised to read throu
 ### Michelangelo specifications
 
 #### Color grid
-A grid overview of all your project colors. Every color item consists of 4 parts, with the color variable and hexadecimal required:
+This is a grid overview of all your project colors. Every color item consists of 4 parts (the color variable and hexadecimal are required).
 - color example
 - color name
 - color variable
 - color hexadecimal
 
-In the example below you can see we have a heading, a description and that we list our colors below with a color description after the dash. To make the colors work you must first define your hexadecimal, then optionally add an color name.
+In the example below you can see we have a heading, a description, and we list our colors. To make the colors work you must first define your hexadecimal after the dash, then optionally add a color name.
 ```scss
 // Primary Colors
 //
@@ -85,7 +91,7 @@ In the example below you can see we have a heading, a description and that we li
 The specific styling for the styleguide is written mobile first. Which makes it possible to test your project's styling directly on any device size.
 
 #### Smooth scrolling
-When clicking on a sub navigation item the page animate scrolls to that specific item, so smooooth.
+When clicking on a sub navigation item, the page animate scrolls to that specific item, so smooooth.
 
 #### Prefixed styles
 All styles written for the styleguide are prefixed with `.kss-`. They do not interfere with your project styles.
@@ -95,5 +101,7 @@ The example src directory is a boilerplate for [ITCSS methodology](https://youtu
 
 
 
-## Demo
-Have a look at [the demo styleguide](http://stamkracht.github.io/michelangelo/) generated with dummy content to get an impression of the Michelangelo theme with the ITCSS architecture.
+## Customize
+Inside the node package directory, go to `kss_styleguide/custom-template/kss-assets/css/` to change the styling of this theme. Run `sass --watch --sourcemap=none kss.scss:kss.css` to watch for changes and compile the scss files.
+
+You can quickly change the primary color by changing the value of the variable `$cowabunga` in `_settings.scss`.
