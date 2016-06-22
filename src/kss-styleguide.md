@@ -1,4 +1,4 @@
-# Make your life easier with style guides
+# Make your life easier with styleguides
 
 
 ## Whaaaat, styleguides?
