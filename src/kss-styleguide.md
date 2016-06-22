@@ -1,4 +1,4 @@
-# It's not just css, stop ruining your styles
+# Make your life easier with style guides
 
 
 ## Whaaaat, styleguides?
