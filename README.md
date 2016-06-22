@@ -15,7 +15,7 @@
 
 
 ## About
-This is a custom template for the kss-node living style guide.
+This is a custom template for the KSS-node living style guide.
 
 
 
@@ -25,7 +25,12 @@ Have a look at [the demo styleguide](http://stamkracht.github.io/michelangelo/se
 
 
 ## Get started
-If you are new to KSS-node, install it globally with `npm install -g kss`. Then go to your project directory and install the plugin locally.
+Go to your project directory. If you haven't installed KSS-node yet, install it locally* `npm install kss --save-dev`.
+
+**Don't install KSS-node globally, it will cause problems in the long run when you have multiple projects using KSS-node.*
+
+Now, install the Michelangelo package locally.
+
 ```
 npm install michelangelo --save-dev
 ```
@@ -51,7 +56,10 @@ Create a kss-config file `touch kss-config.json` and specify the following confi
 }
 ```
 
-After setting up the config file, run `kss --config kss-config.json` to generate your living styleguide. Locate your styleguide at the specified path in your config file and open it in the browser. Cowabunga!
+After setting up the config file, run `kss --config kss-config.json` to generate your living styleguide*. Locate your styleguide at the specified path in your config file and open it in the browser. Cowabunga!
+
+**If you get the error `command not found: kss`. Fix this by adding `./node_modules/.bin` to your `PATH`.*
+
 
 
 
@@ -60,7 +68,7 @@ After setting up the config file, run `kss --config kss-config.json` to generate
 ### KSS-node and documentation syntax
 KSS-node is an implementation of Knyle Style Sheets. This is a documentation syntax for css that can be used to create a living style guide. KSS-node has a few additional features such as adding a copy of the markup inline or external.
 
-To get familiar with the documentation syntax it is highly advised to read through [the annotated copy of the official KSS spec on the kss-node repository](https://github.com/kss-node/kss/blob/spec/SPEC.md).
+To get familiar with the documentation syntax it is highly advised to read through [the annotated copy of the official KSS spec on the KSS-node repository](https://github.com/kss-node/kss/blob/spec/SPEC.md).
 
 
 ### Michelangelo specifications
