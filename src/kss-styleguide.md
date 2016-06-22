@@ -2,7 +2,7 @@
 
 
 ## Whaaaat, styleguides?
-Styleguides can be seen as a roadmap for developers and designers to maintain consistency on their code and the UI. Some styleguides are built in static HTML, but this is difficult to maintain. A better solution would be a living styleguide, which is auto-generated from the comments in your codebase.
+Styleguides can be seen as a roadmap for developers and designers to maintain consistency on their code and UI. Some styleguides are built in static HTML, but this is difficult to maintain. A better solution would be a living styleguide, which is auto-generated from the comments in your codebase.
 
 
 ## But why?
@@ -12,7 +12,7 @@ During the project lifetime, different developers encounter the codebase. Withou
 ## Convincing, when do we begin?
 The best time to start creating your styleguide is at the beginning of a project. This can also be seen as Style Guide Driven Development (SGDD). You develop the components first, document them in a style guide, and connect the pieces afterwards like a puzzle. This will eventually shape the UI. From there it is important to maintain the styleguide when the UI gets an update.
 
-If you're already in the middle of a project it's wise to start of with a interface inventory. [An interface inventory is a comprehensive collection of the bits and pieces that make up your interface](http://bradfrost.com/blog/post/interface-inventory/).
+If you're already in the middle of a project it's wise to start off with an interface inventory. [An interface inventory is a comprehensive collection of the bits and pieces that make up your interface](http://bradfrost.com/blog/post/interface-inventory/).
 
 
 ## So, how do I start?
@@ -47,7 +47,7 @@ Create a kss-config file `touch kss-config.json` and specify the following confi
 }
 ```
 
-After setting up the config file, run `kss --config kss-config.json` to generate your living styleguide*. Locate your styleguide at the specified path in your config file and open it in the browser. Cowabunga!
+After setting up the config file, run `kss --config kss-config.json` to generate your living styleguide*. Locate your styleguide at the specified path in your config file and open it in the browser.
 
 **If you get the error `command not found: kss`. Fix this by adding `./node_modules/.bin` to your `PATH`.*
 
