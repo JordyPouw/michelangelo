@@ -207,6 +207,7 @@
     line-height: 1.5; }
   .kss-markdown a {
     color: #3498DB;
+    font-size: 1rem;
     text-decoration: none; }
   .kss-markdown a:hover,
   .kss-markdown a:focus {
@@ -226,22 +227,31 @@
     color: #E87E04;
     font-weight: 700; }
   .kss-markdown h1 {
-    font-size: 2em; }
+    font-size: 2rem; }
   .kss-markdown h2 {
-    font-size: 1.875em; }
+    font-size: 1.875rem; }
   .kss-markdown h3 {
-    font-size: 1.375em; }
+    font-size: 1.375rem; }
   .kss-markdown h4 {
-    font-size: 1.25em; }
+    font-size: 1.25rem; }
   .kss-markdown h5 {
-    font-size: 1.125em; }
+    font-size: 1.125rem; }
   .kss-markdown h6 {
-    font-size: 1em; }
+    font-size: 1rem; }
   .kss-markdown ol,
   .kss-markdown ul,
   .kss-markdown p {
     margin-bottom: 1.5rem;
-    font-size: 1em; }
+    font-size: 1rem; }
+  .kss-markdown ol,
+  .kss-markdown ul {
+    padding-left: 40px;
+    list-style-position: outside;
+    font-size: 1rem; }
+  .kss-markdown ol {
+    list-style-type: decimal; }
+  .kss-markdown ul {
+    list-style-type: circle; }
   .kss-markdown img,
   .kss-markdown video,
   .kss-markdown audio,
@@ -263,7 +273,8 @@
     border: 0;
     border-top: 1px solid #CCCCCC;
     padding: 0; }
-  .kss-markdown pre {
+  .kss-markdown pre,
+  .kss-markdown pre[class*=language-] {
     overflow: auto;
     border: 1px solid #CCCCCC;
     padding: 1em;
