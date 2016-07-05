@@ -293,8 +293,6 @@
   padding: 20px;
   padding-top: 80px;
   background: #FFFFFF;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
   transition: opacity 0.4s ease-out; }
   .kss-documentation.kss-state-active {
     opacity: 0.1; }
@@ -315,6 +313,13 @@
 .kss-section__content {
   border: 1px solid #CCCCCC;
   padding: 1em; }
+  .kss-section__content ol,
+  .kss-section__content ul,
+  .kss-section__content p,
+  .kss-section__content a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.5; }
 
 .kss-section__permalink {
   text-decoration: none; }
@@ -408,6 +413,7 @@
 .kss-modifiers__heading {
   margin: 0;
   margin-bottom: 10px;
+  font-family: 'Lato', sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
   color: #E87E04; }
