@@ -1,6 +1,6 @@
 {
   "name": "michelangelo",
-  "version": "0.4.8",
+  "version": "0.4.9",
   "description": "This is a custom template for the kss-node living style guide.",
   "devDependencies": {
     "gulp": "~3.9.1",
