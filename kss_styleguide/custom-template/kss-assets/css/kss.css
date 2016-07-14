@@ -369,6 +369,7 @@
   line-height: 1.5; }
 
 .kss-section__description {
+  margin-bottom: 20px;
   line-height: 1.5; }
   .kss-section__description ol,
   .kss-section__description ul,
