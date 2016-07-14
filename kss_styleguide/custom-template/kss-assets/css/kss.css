@@ -335,6 +335,12 @@
     font-size: 1.875rem; }
   .kss-section__item--depth-3 {
     font-size: 1.375rem; }
+  .kss-section__item--depth-4 {
+    font-size: 1.25rem; }
+  .kss-section__item--depth-5 {
+    font-size: 1.125rem; }
+  .kss-section__item--depth-6 {
+    font-size: 1rem; }
 
 .kss-section__ref {
   display: inline-block;

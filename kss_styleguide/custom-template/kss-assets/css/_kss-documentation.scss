@@ -53,9 +53,15 @@ $kss-modifiers-name-color: $cowabunga;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
 
-  &--depth-2 {font-size:rem(30px);}
+  &--depth-2 { font-size:rem(30px); }
 
-  &--depth-3 {font-size:rem(22px);}
+  &--depth-3 { font-size:rem(22px); }
+
+  &--depth-4 { font-size:rem(20px); }
+
+  &--depth-5 { font-size:rem(18px); }
+
+  &--depth-6 { font-size:rem(16px); }
 }
 
 .kss-section__ref {
