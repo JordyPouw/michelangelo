@@ -29,6 +29,7 @@ $kss-markdown-headings-color: $cowabunga;
 
   a {
     color: $blue;
+    font-size: rem(16px);
     text-decoration: none;
   }
 
@@ -55,19 +56,30 @@ $kss-markdown-headings-color: $cowabunga;
     font-weight: 700;
   }
 
-  h1 { font-size: em(32px); }
-  h2 { font-size: em(30px); }
-  h3 { font-size: em(22px); }
-  h4 { font-size: em(20px); }
-  h5 { font-size: em(18px); }
-  h6 { font-size: em(16px); }
+  h1 { font-size: rem(32px); }
+  h2 { font-size: rem(30px); }
+  h3 { font-size: rem(22px); }
+  h4 { font-size: rem(20px); }
+  h5 { font-size: rem(18px); }
+  h6 { font-size: rem(16px); }
 
   ol,
   ul,
   p {
     margin-bottom: rem(24px);
-    font-size: em(16px);
+    font-size: rem(16px);
   }
+
+  ol,
+  ul {
+    padding-left: 40px;
+    list-style-position: outside;
+    font-size: rem(16px);
+  }
+
+  ol { list-style-type: decimal; }
+
+  ul { list-style-type: circle; }
 
   img,
   video,
@@ -94,7 +106,8 @@ $kss-markdown-headings-color: $cowabunga;
     padding: 0;
   }
 
-  pre {
+  pre,
+  pre[class*=language-] {
     overflow: auto;
     border: 1px solid $gray;
     padding: 1em;
