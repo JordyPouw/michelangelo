@@ -85,6 +85,10 @@
           {{/if}}
 
             <article class="kss-section__content">
+              {{#if sourceFile.name}}
+                <p class="kss-section__source">Source: <span>{{sourceFile.name}}</span>, line <span>{{sourceFile.line}}</span></p>
+              {{/if}}
+
               <a class="kss-section__permalink" href="#kssref-{{referenceURI}}">
                 <h{{depth}} class="kss-section__item kss-section__item--depth-{{depth}}">
                   <span class="kss-section__ref">{{referenceNumber}}</span>
@@ -94,10 +98,6 @@
 
               {{#if description}}
                 <div class="kss-section__description">{{{description}}}</div>
-              {{/if}}
-
-              {{#if sourceFile.name}}
-                <p class="kss-section__source">Source: <span>{{sourceFile.name}}</span>, line <span>{{sourceFile.line}}</span></p>
               {{/if}}
 
               {{#if parameters}}

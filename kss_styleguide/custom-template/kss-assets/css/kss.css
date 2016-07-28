@@ -207,6 +207,7 @@
     line-height: 1.5; }
   .kss-markdown a {
     color: #3498DB;
+    font-size: 1rem;
     text-decoration: none; }
   .kss-markdown a:hover,
   .kss-markdown a:focus {
@@ -226,22 +227,31 @@
     color: #E87E04;
     font-weight: 700; }
   .kss-markdown h1 {
-    font-size: 2em; }
+    font-size: 2rem; }
   .kss-markdown h2 {
-    font-size: 1.875em; }
+    font-size: 1.875rem; }
   .kss-markdown h3 {
-    font-size: 1.375em; }
+    font-size: 1.375rem; }
   .kss-markdown h4 {
-    font-size: 1.25em; }
+    font-size: 1.25rem; }
   .kss-markdown h5 {
-    font-size: 1.125em; }
+    font-size: 1.125rem; }
   .kss-markdown h6 {
-    font-size: 1em; }
+    font-size: 1rem; }
   .kss-markdown ol,
   .kss-markdown ul,
   .kss-markdown p {
     margin-bottom: 1.5rem;
-    font-size: 1em; }
+    font-size: 1rem; }
+  .kss-markdown ol,
+  .kss-markdown ul {
+    padding-left: 40px;
+    list-style-position: outside;
+    font-size: 1rem; }
+  .kss-markdown ol {
+    list-style-type: decimal; }
+  .kss-markdown ul {
+    list-style-type: circle; }
   .kss-markdown img,
   .kss-markdown video,
   .kss-markdown audio,
@@ -263,7 +273,8 @@
     border: 0;
     border-top: 1px solid #CCCCCC;
     padding: 0; }
-  .kss-markdown pre {
+  .kss-markdown pre,
+  .kss-markdown pre[class*=language-] {
     overflow: auto;
     border: 1px solid #CCCCCC;
     padding: 1em;
@@ -282,8 +293,6 @@
   padding: 20px;
   padding-top: 80px;
   background: #FFFFFF;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
   transition: opacity 0.4s ease-out; }
   .kss-documentation.kss-state-active {
     opacity: 0.1; }
@@ -304,6 +313,13 @@
 .kss-section__content {
   border: 1px solid #CCCCCC;
   padding: 1em; }
+  .kss-section__content ol,
+  .kss-section__content ul,
+  .kss-section__content p,
+  .kss-section__content a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.5; }
 
 .kss-section__permalink {
   text-decoration: none; }
@@ -319,6 +335,12 @@
     font-size: 1.875rem; }
   .kss-section__item--depth-3 {
     font-size: 1.375rem; }
+  .kss-section__item--depth-4 {
+    font-size: 1.25rem; }
+  .kss-section__item--depth-5 {
+    font-size: 1.125rem; }
+  .kss-section__item--depth-6 {
+    font-size: 1rem; }
 
 .kss-section__ref {
   display: inline-block;
@@ -347,6 +369,7 @@
   line-height: 1.5; }
 
 .kss-section__description {
+  margin-bottom: 20px;
   line-height: 1.5; }
   .kss-section__description ol,
   .kss-section__description ul,
@@ -397,6 +420,7 @@
 .kss-modifiers__heading {
   margin: 0;
   margin-bottom: 10px;
+  font-family: 'Lato', sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
   color: #E87E04; }
