@@ -184,7 +184,8 @@
 
 .kss-markdown {
   overflow-y: auto;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  max-width: 800px; }
   .kss-markdown ul,
   .kss-markdown ol,
   .kss-markdown dl,
