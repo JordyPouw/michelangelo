@@ -4,6 +4,7 @@ $kss-markdown-headings-color: $cowabunga;
 .kss-markdown {
   overflow-y: auto;
   overflow-x: hidden;
+  max-width: 800px;
 
   ul,
   ol,
