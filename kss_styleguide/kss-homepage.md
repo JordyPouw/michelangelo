@@ -36,10 +36,10 @@ Create a kss-config file `touch kss-config.json` and specify the following confi
 "//": "relative to this file.",
   "builder"      : "node_modules/michelangelo/kss_styleguide/custom-template/",
   "source"       : "src/",
-  "destination"  : "kss_styleguide/",
+  "destination"  : "kss_styleguide/styleguide/",
 
 "//": "relative to source.",
-  "homepage"     : "kss-styleguide.md",
+  "homepage"     : "../kss_styleguide/kss-homepage.md",
 
 "//": "relative to the generated style guide.",
   "css": [],

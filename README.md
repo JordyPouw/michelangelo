@@ -45,10 +45,10 @@ Create a kss-config file `touch kss-config.json` and specify the following confi
 "//": "relative to this file.",
   "builder"      : "node_modules/michelangelo/kss_styleguide/custom-template/",
   "source"       : "src/",
-  "destination"  : "kss_styleguide/",
+  "destination"  : "kss_styleguide/styleguide/",
 
 "//": "relative to source.",
-  "homepage"     : "kss-styleguide.md",
+  "homepage"     : "../kss_styleguide/kss-homepage.md",
 
 "//": "relative to the generated style guide.",
   "css": [],
@@ -69,6 +69,9 @@ After setting up the config file, run `kss --config kss-config.json` to generate
 KSS-node is an implementation of Knyle Style Sheets. This is a documentation syntax for css that can be used to create a living style guide. KSS-node has a few additional features such as adding a copy of the markup inline or external.
 
 To get familiar with the documentation syntax it is highly advised to read through [the annotated copy of the official KSS spec on the KSS-node repository](https://github.com/kss-node/kss/blob/spec/SPEC.md).
+
+#### Pro tip
+When you're dealing with a high amount of example markup and you don't want to cause any code-bloat, seperate your example markup from your css modules. Create a directory in your kss_styleguide directory (name it anyway you want), and place the markup files in there. In your css module, link to the file for your example markup. (e.g., `Markup: ../kss_styleguide/markup/components.form.html`)
 
 
 ### Michelangelo specifications
