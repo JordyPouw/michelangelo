@@ -9,7 +9,7 @@
   "destination"  : "kss_styleguide/styleguide/",
 
 "//": "relative to source.",
-  "homepage"     : "kss-styleguide.md",
+  "homepage"     : "../kss_styleguide/kss-homepage.md",
 
 "//": "relative to the generated style guide.",
   "css": [],
