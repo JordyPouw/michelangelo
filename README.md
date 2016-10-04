@@ -35,7 +35,16 @@ Now, install the Michelangelo package locally.
 npm install michelangelo --save-dev
 ```
 
-Create a kss-config file `touch kss-config.json` and specify the following config. Read [the KSS-node docs](https://github.com/kss-node/kss-node#using-the-command-line-tool) for more information about the config.
+Create a kss-config file `touch kss-config.json` and specify the required config:
+  - title
+  - builder: *refer to the Michelangelo template*
+  - source
+  - destination
+  - homepage
+  - css
+  - js
+
+Read [the KSS-node docs](https://github.com/kss-node/kss-node#using-the-command-line-tool) for more information about the config, or use the example below. *Note: the source config should refer to your styles directory.*
 ```
 {
   "title"        : "Michelangelo Styleguide",
