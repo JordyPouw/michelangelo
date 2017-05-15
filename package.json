@@ -3,10 +3,10 @@
   "version": "0.5.1",
   "description": "This is a custom template for the kss-node living style guide.",
   "devDependencies": {
-    "gulp": "~3.9.1",
-    "gulp-load-plugins": "~1.2.2",
-    "gulp-shell": "~0.5.2",
-    "kss": "^3.0.0-beta.12"
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-shell": "^0.6.3",
+    "kss": "^3.0.0-beta.18"
   },
   "repository": "https://github.com/stamkracht/michelangelo.git",
   "license": "MIT",
