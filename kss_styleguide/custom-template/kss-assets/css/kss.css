@@ -9,7 +9,9 @@
   text-align: center;
   font-size: 1.5rem;
   font-family: 'Lato', sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: normal; }
 
 .kss-header {
   z-index: 900;
@@ -149,6 +151,8 @@
   font-size: 1rem;
   font-weight: 400;
   text-decoration: none;
+  text-transform: none;
+  letter-spacing: normal;
   transition: color 0.3s; }
   .kss-nav__item a:hover {
     color: #E87E04; }
@@ -333,7 +337,8 @@
   font-size: 2rem;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  text-transform: none; }
+  text-transform: none;
+  letter-spacing: normal; }
   .kss-section__item--depth-2 {
     font-size: 1.875rem; }
   .kss-section__item--depth-3 {

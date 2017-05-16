@@ -64,6 +64,8 @@ $kss-nav-item-link-active: $cowabunga;
   font-size: rem(16px);
   font-weight: 400;
   text-decoration: none;
+  text-transform: none;
+  letter-spacing: normal;
   transition: color 0.3s;
 
   &:hover { color: $kss-nav-item-link-active; }
