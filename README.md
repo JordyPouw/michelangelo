@@ -98,10 +98,10 @@ In the example below you can see we have a heading, a description, and we list o
 //
 // The primary colors for branding.
 //
-// $leonardo      -  #2980b9, Leader blue
-// $donatello     -  #8e44ad, Purple tech
-// $raphael       -  #c0392b, Sai
-// $michelangelo  -  #E87E04, Cowabunga
+// $leonardo      -  #2980b9; Leader blue
+// $donatello     -  #8e44ad; Purple tech
+// $raphael       -  #c0392b; Sai
+// $michelangelo  -  rgb(232, 126, 4); Cowabunga
 // $splinter      -  #FDE3A7
 //
 // Styleguide Settings.Colors
