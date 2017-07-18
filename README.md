@@ -124,4 +124,4 @@ The example src directory is a boilerplate for [ITCSS methodology](https://youtu
 ## Customize
 Inside the node package directory, go to `kss_styleguide/custom-template/kss-assets/css/` to change the styling of this theme. Run `sass --watch --sourcemap=none kss.scss:kss.css` to watch for changes and compile the scss files.
 
-You can quickly change the primary color by changing the value of the variable `$cowabunga` in `_settings.scss`.
+You can quickly change the primary color by changing the value of the variable `$cowabunga` in `kss-settings.scss`.
