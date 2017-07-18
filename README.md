@@ -35,7 +35,16 @@ Now, install the Michelangelo package locally.
 npm install michelangelo --save-dev
 ```
 
-Create a kss-config file `touch kss-config.json` and specify the following config. Read [the KSS-node docs](https://github.com/kss-node/kss-node#using-the-command-line-tool) for more information about the config.
+Create a kss-config file `touch kss-config.json` and specify the required config:
+  - title
+  - builder: *refer to the Michelangelo template*
+  - source
+  - destination
+  - homepage
+  - css
+  - js
+
+Read [the KSS-node docs](https://github.com/kss-node/kss-node#using-the-command-line-tool) for more information about the config, or use the example below. *Note: the source config should refer to your styles directory.*
 ```
 {
   "title"        : "Michelangelo Styleguide",
@@ -45,10 +54,10 @@ Create a kss-config file `touch kss-config.json` and specify the following confi
 "//": "relative to this file.",
   "builder"      : "node_modules/michelangelo/kss_styleguide/custom-template/",
   "source"       : "src/",
-  "destination"  : "kss_styleguide/",
+  "destination"  : "kss_styleguide/styleguide/",
 
 "//": "relative to source.",
-  "homepage"     : "kss-styleguide.md",
+  "homepage"     : "../kss_styleguide/kss-homepage.md",
 
 "//": "relative to the generated style guide.",
   "css": [],
@@ -70,6 +79,9 @@ KSS-node is an implementation of Knyle Style Sheets. This is a documentation syn
 
 To get familiar with the documentation syntax it is highly advised to read through [the annotated copy of the official KSS spec on the KSS-node repository](https://github.com/kss-node/kss/blob/spec/SPEC.md).
 
+#### Pro tip
+When you're dealing with a high amount of example markup and you don't want to cause any code-bloat, seperate your example markup from your css modules. Create a directory in your kss_styleguide directory (name it anyway you want), and place the markup files in there. In your css module, link to the file for your example markup. (e.g., `Markup: ../kss_styleguide/markup/components.form.html`)
+
 
 ### Michelangelo specifications
 
@@ -86,10 +98,10 @@ In the example below you can see we have a heading, a description, and we list o
 //
 // The primary colors for branding.
 //
-// $leonardo      -  #2980b9, Leader blue
-// $donatello     -  #8e44ad, Purple tech
-// $raphael       -  #c0392b, Sai
-// $michelangelo  -  #E87E04, Cowabunga
+// $leonardo      -  #2980b9; Leader blue
+// $donatello     -  #8e44ad; Purple tech
+// $raphael       -  #c0392b; Sai
+// $michelangelo  -  rgb(232, 126, 4); Cowabunga
 // $splinter      -  #FDE3A7
 //
 // Styleguide Settings.Colors

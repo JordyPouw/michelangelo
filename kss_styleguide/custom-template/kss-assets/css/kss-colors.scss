@@ -1,6 +1,6 @@
 .kss-colors-container {
   margin: 0;
-  padding-left: 0; 
+  padding-left: 0;
 
   @include mq(min, 568px) { margin-left: -10px; }
 }
