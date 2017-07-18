@@ -17,9 +17,9 @@ $kss-nav-item-link-active: $cowabunga;
   font-weight: 400;
   transform: translateX(-100%);
   transition: transform 0.3s ease-out;
-  
+
   @include mq(min, 768px) { width: 35%; }
-  
+
   @include mq(min, 1024px) {
     width: 25%;
     transform: translateX(0);
@@ -60,9 +60,12 @@ $kss-nav-item-link-active: $cowabunga;
   box-sizing: border-box;
   padding: 5px 20px;
   color: $black;
+  font-family: 'Lato', sans-serif;
   font-size: rem(16px);
   font-weight: 400;
   text-decoration: none;
+  text-transform: none;
+  letter-spacing: normal;
   transition: color 0.3s;
 
   &:hover { color: $kss-nav-item-link-active; }
@@ -81,7 +84,7 @@ $kss-nav-item-link-active: $cowabunga;
 }
 
 .kss-nav__name {
-  position: relative; 
+  position: relative;
   display: inline-block;
   vertical-align: middle;
   transition: transform 0.3s;

@@ -57,7 +57,7 @@ $bar-width: 30px;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   transition: all 0.4s;
 
-  &:before, 
+  &:before,
   &:after {
     content: '';
     position: absolute;
@@ -65,7 +65,7 @@ $bar-width: 30px;
     height: $bar-height;
     background: $kss-header-hamburger-color;
     transition: all 0.5s;
-  }        
+  }
 
   &:before {
     top: -$bar-height*2;
@@ -79,7 +79,7 @@ $bar-width: 30px;
 
   &.kss-state-active { background: transparent; }
 
-  &.kss-state-active:before, 
+  &.kss-state-active:before,
   &.kss-state-active:after {
     width: $bar-width/2;
     transition: all 0.5s;

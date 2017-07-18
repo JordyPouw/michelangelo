@@ -22,7 +22,7 @@
   @else if $min-max == min {
     @media only screen and (min-width: mq-unit($width1 + 1)) { @content; }
   }
-  
+
   // max-width.
   @else if $min-max == max {
     @media only screen and (max-width: mq-unit($width1)) { @content; }

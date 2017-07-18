@@ -34,7 +34,7 @@ $kss-markdown-headings-color: $cowabunga;
     text-decoration: none;
   }
 
-  a:hover, 
+  a:hover,
   a:focus {
     color: lighten($blue, 15%);
     outline: 0;
@@ -48,9 +48,9 @@ $kss-markdown-headings-color: $cowabunga;
 
   h2 { margin-top: rem(48px); }
 
-  h3, 
-  h4, 
-  h5, 
+  h3,
+  h4,
+  h5,
   h6 {
     margin-top: rem(24px);
     color: $kss-markdown-headings-color;
