@@ -1,6 +1,6 @@
 {
   "name": "michelangelo",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "This is a custom template for the kss-node living style guide.",
   "repository": "https://github.com/stamkracht/michelangelo.git",
   "license": "MIT",
