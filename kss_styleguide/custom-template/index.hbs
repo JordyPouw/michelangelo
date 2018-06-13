@@ -129,11 +129,11 @@
                 <div class="kss-modifiers__example">{{{markup}}}</div>
 
                 {{#each modifiers}}
-                  <h2 class="kss-modifiers__name">{{name}}</h2>
-
-                  <p class="kss-modifiers__description">{{{description}}}</p>
-
-                  <div class="kss-modifiers__example">{{{markup}}}</div>
+                  <article class="kss-modifiers__modifier">
+                    <h2 class="kss-modifiers__name">{{name}}</h2>
+                    <p class="kss-modifiers__description">{{{description}}}</p>
+                    <div class="kss-modifiers__example">{{{markup}}}</div>
+                  </article>
                 {{/each}}
               </article>
 
