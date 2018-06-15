@@ -100,6 +100,24 @@ $kss-modifiers-name-color: $cowabunga;
   margin-bottom: 20px;
   line-height: 1.5;
 
+  &.state-deprecated,
+  &.state-experimental {
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    padding: 5px 10px;
+  }
+
+  &.state-deprecated {
+    border: 1px solid orange;
+    background: rgba(orange, 0.4);
+  }
+
+  &.state-experimental {
+    border: 1px solid lightblue;
+    background: rgba(lightblue, 0.4);
+  }
+
   ol,
   ul,
   p,

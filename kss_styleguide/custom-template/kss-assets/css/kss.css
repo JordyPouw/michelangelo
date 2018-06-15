@@ -62,7 +62,7 @@
   -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   transition: all 0.4s; }
   .kss-header__hamburger:before, .kss-header__hamburger:after {
     content: '';
@@ -379,6 +379,17 @@
 .kss-section__description {
   margin-bottom: 20px;
   line-height: 1.5; }
+  .kss-section__description.state-deprecated, .kss-section__description.state-experimental {
+    display: inline-block;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    padding: 5px 10px; }
+  .kss-section__description.state-deprecated {
+    border: 1px solid orange;
+    background: rgba(255, 165, 0, 0.4); }
+  .kss-section__description.state-experimental {
+    border: 1px solid lightblue;
+    background: rgba(173, 216, 230, 0.4); }
   .kss-section__description ol,
   .kss-section__description ul,
   .kss-section__description p,

@@ -97,7 +97,7 @@
               </a>
 
               {{#if description}}
-                <div class="kss-section__description">{{{description}}}</div>
+                <div class="kss-section__description{{#if deprecated}} state-deprecated{{/if}}{{#if experimental}} state-experimental{{/if}}">{{{description}}}</div>
               {{/if}}
 
               {{#if parameters}}
